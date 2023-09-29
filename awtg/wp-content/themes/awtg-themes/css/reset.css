@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/Noto/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto-Bold";
+  src: url("../fonts/Noto/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open-sans";
+  src: url("../fonts/Open-sans/static/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open-sans-Bold";
+  src: url("../fonts/Open-sans/static/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "VLOswald-Light";
+  src: url("../fonts/VLOswald-Light.woff2");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: "VLOswald-Light";
+}
+
+ul,ol {
+	font-family: "Open-sans";
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+p {
+	font-family: "Open-sans";
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "VLOswald-Light";
+	margin: 0;
+	padding: 0;
+}
+
+.mr-top {
+	margin-top: 70px;
+}
+
+.mr-top2 {
+	margin-top: 80px;
+	margin-bottom: 130px;
+}
+
+.mr-top3 {
+	margin-top: 120px;
+}
+
+@media(max-width: 991px) {
+	.mr-top2 {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 450px) {
+	.mr-top {
+		margin-top: 30px;
+	}
+}
+
+/*set up animation*/
+
+@keyframes Inout {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/*-----------*/
+
+

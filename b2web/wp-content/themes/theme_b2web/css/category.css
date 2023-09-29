@@ -1,0 +1,253 @@
+
+.bg-header-pc {
+    background-image: unset;
+    background-color: white;
+    mix-blend-mode: normal;
+}
+
+@media(max-width: 991px) {
+    .menu-mobile {
+        background-color: white;
+    }
+}
+
+/*---------------*/
+
+/*body trang tin tức*/
+
+.bg-category {
+    margin: 70px 0;
+}
+
+.banner-category {
+    align-items: center;
+    margin-top: 70px;
+}
+
+.img-intro img {
+    width: 100%;
+    height: auto;
+}
+
+.img-banner-category {
+    padding-right: 50px;
+}
+
+.content-category {
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.content-category2 {
+    flex-direction: row-reverse;
+}
+
+.img-category img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.title-category2 {
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.title-category2 a {
+    font-family: "Montserrat-Bold";
+    color: black;
+    font-size: 20px;
+}
+
+.text-category {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    border-left: 3px solid #E1DEDE;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+/*phân trang*/
+
+.pagination {
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.pagination span,
+.pagination a {
+    font-weight: 500;
+    line-height: 21px;
+    display: inline-block;
+    float: left;
+    min-width: 33px;
+    margin: 0 8px 8px 0;
+    padding: 5px 11px;
+    text-align: center;
+    border: 2px solid #000123;
+}
+
+.pagination a {
+    color: #000123;
+}
+
+.pagination span {
+    background-color: #000123;
+    color: white;
+    border-color: #000123;
+}
+
+@media(max-width: 1400px) {
+    .img-category img {
+        height: 364px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .img-category img {
+        height: 282px;
+    }
+}
+
+@media(max-width: 991px) {
+    .img-category img {
+        height: 225px;
+    }
+}
+
+@media(max-width: 740px) {
+    .img-category img {
+        height: auto;
+    }
+
+    .img-banner-category {
+        padding-right: 0;
+        margin-bottom: 45px;
+    }
+}
+
+/*body trang single*/
+
+.bg-single {
+    max-width: 960px;
+}
+
+.title-single {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 35px;
+}
+
+.img-single img {
+    width: 100%;
+    height: auto;
+}
+
+.content-single {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+.content-single p {
+    margin-bottom: 15px;
+}
+
+.content-single iframe {
+    width: 100%;
+}
+
+.is-provider-youtube iframe {
+    width: 100%;
+    height: 520px;
+    margin: 15px 0;
+}
+
+.content-single img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.content-single div[style] {
+    width: 100% !important;
+}
+
+.wp-block-quote p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #A4832B;
+    padding: 30px 0;
+}
+
+.wp-element-caption,
+.wp-caption-text {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-single h1,
+.content-single h2,
+.content-single h3,
+.content-single h4,
+.content-single h5,
+.content-single h6 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+@media(max-width: 991px) {
+    .bg-single {
+        max-width: 720px;
+    }
+    
+    .is-provider-youtube iframe {
+        height: 390px;
+    }
+    
+    .title-single {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 450px) {
+    
+    .title-single {
+        font-size: 25px;
+    }
+    
+    .is-provider-youtube iframe {
+        height: 300px;
+    }
+    
+    blockquote {
+        font-size: 30px;
+    }
+}

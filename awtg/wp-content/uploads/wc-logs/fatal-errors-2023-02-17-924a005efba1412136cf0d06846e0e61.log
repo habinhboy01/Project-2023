@@ -1,0 +1,14 @@
+2023-02-17T02:06:44+00:00 CRITICAL Uncaught Error: Class 'Caudat_Custom_Walker_Comment' not found in /www/wwwroot/awaytogreen.com/wp-content/themes/sanger/comments.php:13
+Stack trace:
+#0 /www/wwwroot/awaytogreen.com/wp-includes/comment-template.php(1550): require()
+#1 /www/wwwroot/awaytogreen.com/wp-content/themes/sanger/template-parts/content-single.php(45): comments_template()
+#2 /www/wwwroot/awaytogreen.com/wp-includes/template.php(785): require('/www/wwwroot/aw...')
+#3 /www/wwwroot/awaytogreen.com/wp-includes/template.php(718): load_template()
+#4 /www/wwwroot/awaytogreen.com/wp-includes/general-template.php(204): locate_template()
+#5 /www/wwwroot/awaytogreen.com/wp-content/themes/sanger/single.php(46): get_template_part()
+#6 /www/wwwroot/awaytogreen.com/wp-includes/template-loader.php(106): include('/www/wwwroot/aw...')
+#7 /www/wwwroot/awaytogreen.com/wp-blog-header.php(19): require_once('/www/wwwroot/aw...')
+#8 /www/wwwroot/awaytogreen.com/index.php(17): require('/www/wwwroot/aw...')
+#9 {main}
+  thrown in /www/wwwroot/awaytogreen.com/wp-content/themes/sanger/comments.php on line 13
+
