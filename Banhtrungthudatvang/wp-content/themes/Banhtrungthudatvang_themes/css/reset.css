@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/font-times-new-roman/SVN-Times New Roman.ttf");
+}
+
+@font-face {
+  font-family: "FSTrajanProRegular";
+  src: url("../fonts/FSTrajanProRegular/FSTrajanProRegular.ttf");
+}
+
+
+
+body {
+	background: linear-gradient(to right,rgba(128,84,40,1) 0%,rgba(231,196,126,1) 100%);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,ol {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+

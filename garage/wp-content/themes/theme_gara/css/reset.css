@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/static/OpenSans/OpenSans-Bold.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #1e1e1e;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	font-family: "OpenSans";
+}
+
+ul,ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+
+h1,h2,h3,h4,h5,h6,p {
+	font-family: "OpenSans";
+}
+

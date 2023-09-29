@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/anton/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/arimo/static/Arimo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/static/Nunito-Regular.ttf");
+}
+
+body,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol,li {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+*/
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	padding-right: 5%;
+	padding-left: 5%;
+}

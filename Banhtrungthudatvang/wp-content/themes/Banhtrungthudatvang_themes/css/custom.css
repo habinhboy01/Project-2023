@@ -1,0 +1,1365 @@
+.carousel_1 {
+	position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: black;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 8px;
+	height: 8px;
+}
+
+.carousel_1 > .owl-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+}
+
+.btn-prev,
+.btn-next {
+	background: #efcb88;
+    color: white;
+    font-size: 22px;
+    padding: 3px 12px;
+    transition: 0.3s;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #302825;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: unset;
+}
+
+.carousel_1 > .owl-dots {
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	right: 0;
+}
+
+@media(max-width: 450px) {
+	.carousel_1 > .owl-nav {
+		display: none;
+	}
+}
+
+/*Giới Thiệu Về Chúng Tôi*/
+
+.intro-home {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.intro-home__text {
+	text-align: center;
+	border: 1px solid #C0B197;
+	margin: 20px;
+	padding: 25% 90px;
+}
+
+.intro-home__text h1 {
+	font-family: "Times New Roman";
+	color: #523721;
+	font-size: 1.75rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.text-intro {
+	font-family: "FSTrajanProRegular";
+	font-size: 40px;
+	color: #302825;
+}
+
+.text-intro2 {
+	font-family: "Times New Roman";
+	color: #302825;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.slogan-intro {
+	display: flex;
+	justify-content: center;
+	font-family: "Times New Roman";
+	font-size: 1.75rem;
+    color: #523721;
+    font-style: italic;
+    line-height: 1.1em;
+    margin-top: 40px;
+}
+
+.slogan-intro img {
+	width: 35px;
+	object-fit: scale-down;
+}
+
+.slogan-intro li:nth-child(2) {
+	margin: 15px 30px;
+    width: 48%;
+}
+
+.intro-home__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media(max-width: 1600px) {
+	.intro-home__text {
+		padding: 22% 60px;
+	}
+
+	.slogan-intro li:nth-child(2) {
+		width: 55%;
+	}
+}
+
+@media(max-width: 1400px) {
+	.intro-home__text {
+		padding: 20% 50px;
+	}
+
+	.slogan-intro li:nth-child(2) {
+		width: 60%;
+	}
+}
+
+@media(max-width: 1200px) {
+	.intro-home__text {
+		padding: 15% 30px;
+	}
+
+	.slogan-intro li:nth-child(2) {
+		width: 80%;
+	}
+}
+
+@media(max-width: 991px) {
+	.intro-home {
+		grid-template-columns: auto;
+	}
+
+	.intro-home__text {
+		padding: 15% 60px;
+	}
+
+	.intro-home__img img {
+		height: auto;
+	}
+}
+
+@media(max-width: 450px) {
+	.intro-home__text {
+		padding: 15% 20px;
+	}
+
+	.intro-home__text h1,
+	.slogan-intro {
+		font-size: 18px;
+	}
+
+	.text-intro {
+		font-size: 30px;
+	}
+
+	.logo-intro {
+		width: 37px;
+		height: 37px;
+		object-fit: scale-down;
+	}
+
+	.text-intro2 {
+		font-size: 16px;
+	}
+
+	.slogan-intro img {
+		width: 25px;
+	}
+
+	.slogan-intro li:nth-child(2) {
+		width: 100%;
+		margin: 15px;
+	}
+}
+
+/*khám phá các loại hộp bánh*/
+
+.bg-discover {
+	background-color: #302825;
+	text-align: center;
+	padding: 65px 0 30px 0;
+}
+
+.bg-discover h2 {
+	font-family: "Times New Roman";
+    color: #BC955A;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.text-discover {
+	font-family: "FSTrajanProRegular";
+	color: #FFFFFF;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin: 4px 0;
+}
+
+.text-discover2 a {
+	font-family: "Times New Roman";
+	font-size: 13px;
+    color: #7d7775;
+    text-transform: uppercase;
+}
+
+.text-discover2 a:hover {
+	text-decoration: revert;
+}
+
+@media(max-width: 450px) {
+	.bg-discover {
+		padding: 30px 0 25px 0;
+	}
+
+	.bg-discover h2 {
+		font-size: 22px;
+	}
+
+	.text-discover {
+		font-size: 28px;
+	}
+}
+
+
+/*list sản phẩm*/
+
+.bg-prduct-home {
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+
+.content-product-home {
+	text-align: center;
+	margin-top: 45px;
+}
+
+.img-product-home img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.title-product-home a {
+	font-family: "FSTrajanProRegular";
+	color: #FFECD7;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.text-product-home {
+	color: #FFE5CA;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 5px 8%;
+}
+
+.text-price {
+    color: #FFE5CA;
+    font-family: "Times New Roman";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1200px) {
+	.text-product-home {
+		padding: 5px 0;
+	}
+}
+
+
+/*Các Loại Nhân Bánh*/
+
+.title-product-home2 {
+	margin: 15px 0;
+}
+
+.title-product-home2 a {
+	font-family: "FSTrajanProRegular";
+	color: #BC955A;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.text-product-home2 {
+	font-family: "FSTrajanProRegular";
+	color: #BC955A;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*Khách Hàng Của Chúng Tôi*/
+
+.text-partner {
+	text-align: center;
+	color: #3E3735;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.carousel_2 {
+	margin-top: 40px;
+}
+
+.carousel_2 > .owl-nav {
+	display: none;
+}
+
+.carousel_2 > .owl-dots {
+	margin-top: 30px;
+}
+
+#img-partner {
+	width: 150px;
+    height: 120px;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+@media(max-width: 450px) {
+	.text-partner {
+		font-size: 28px;
+	}
+}
+
+
+/*body trang giới thiệu*/
+
+.img-banner-intro {
+	width: 100%;
+	height: auto;
+}
+
+.title-intro {
+	font-family: "Times New Roman";
+	color: white;
+	font-size: 35px;
+	font-style: italic;
+	text-align: center;
+}
+
+.text-intro-page {
+    color: rgb(48, 40, 37);
+    font-family: "FSTrajanProRegular";
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    white-space: normal;
+}
+
+.content-page-intro {
+	font-family: "Times New Roman";
+	font-size: 18px;
+	color: white;
+	margin-top: 30px;
+}
+
+.content-page-intro a {
+	color: white;
+}
+
+.content-page-intro h1,
+.content-page-intro h2,
+.content-page-intro h3,
+.content-page-intro h4,
+.content-page-intro h5,
+.content-page-intro h6 {
+	font-family: "FSTrajanProRegular";
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.content-page-intro ul,
+.content-page-intro ol {
+	list-style: disc;
+	margin-bottom: 10px;
+}
+
+@media(max-width: 991px) {
+	.title-intro {
+		font-size: 28px;
+	}
+
+	.text-intro-page {
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.content-page-intro ul,
+	.content-page-intro ol {
+		padding-left: 20px;
+	}
+}
+
+/*body trang product*/
+
+.content-product-page {
+	padding-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.title-product-page a {
+	font-family: "FSTrajanProRegular";
+	color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.text-price-page {
+	font-family: "FSTrajanProRegular";
+	color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 22px 0;
+}
+
+.description-product {
+	color: #FFFFFF;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.buy-product a {
+    font-family: "FSTrajanProRegular";
+    font-size: 16px;
+    padding: 15px 60px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.buy-product a:hover {
+	background-color: #302825;
+	border: 1px solid #302825;
+}
+
+
+/*phân trang*/
+
+.pagination {
+	font-family: "Times New Roman";
+	margin-top: 30px;
+}
+
+.pagination span,
+.pagination a {
+	font-weight: 500;
+    line-height: 21px;
+    display: inline-block;
+    float: left;
+    min-width: 33px;
+    margin: 0 8px 8px 0;
+    padding: 5px 11px;
+    text-align: center;
+    border: 3px solid #C69F73;
+}
+
+.pagination a {
+	color: #C69F73;
+}
+
+.pagination span {
+	background-color: #C69F73;
+	color: white;
+    border-color: #C69F73;
+}
+
+.title-address {
+	font-family: "FSTrajanProRegular";
+	font-style: unset;
+	margin-bottom: 70px;
+}
+
+@media(max-width: 740px) {
+	.content-product-page {
+		margin-top: 0;
+		padding-left: 0;
+		margin-bottom: 50px;
+	}
+
+	.title-product-page a {
+		font-size: 25px;
+	}
+
+	.text-price-page {
+		font-size: 20px;
+	}
+
+	.title-address {
+		margin-bottom: 40px;
+	}
+}
+
+
+/*body trang các loại nhân*/
+
+.types-cake {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.types-cake__title {
+	margin-top: 30px;
+}
+
+.types-cake__title a {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: "FSTrajanProRegular";
+	color: white;
+}
+
+.types-cake__title a:hover {
+	text-decoration: underline;
+}
+
+.types-cake__price {
+    font-family: "FSTrajanProRegular";
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.types-cake__buy a {
+    font-family: "FSTrajanProRegular";
+    font-size: 16px;
+    padding: 12px 80px;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.types-cake__buy a:hover {
+	background-color: #302825;
+    border: 1px solid #302825;
+}
+
+
+@media(max-width: 991px) {
+	.types-cake__title a {
+		font-size: 20px;
+	}
+}
+
+/*body trang promotions*/
+
+.bg-promotions {
+	background-color: white;
+	padding: 120px 0;
+}
+
+.accordion {
+	font-family: "FSTrajanProRegular";
+	background-color: #ecdfd1;
+	color: #796143;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 1px solid #d4d4d4;
+	transition: 0.4s;
+}
+
+.active-accordion, .accordion:hover {
+  	background-color: #d4d4d4;
+}
+
+.accordion:after {
+  	content: '\002B';
+  	color: #777;
+  	font-weight: bold;
+  	float: right;
+  	margin-left: 5px;
+}
+
+.active-accordion:after {
+  	content: "\2212";
+}
+
+.panel {
+	font-family: "Times New Roman";
+	font-size: 15px;
+  	padding: 0 18px;
+  	background-color: #ecdfd1;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+}
+
+@media(max-width: 740px) {
+	.bg-promotions {
+		padding: 70px 0;
+	}
+
+	.img-promotions {
+		margin-top: 50px;
+	}
+}
+
+/*body trang category*/
+
+.content-category {
+	margin-bottom: 45px;
+}
+
+.img-category img {
+	width: 100%;
+	height: auto;
+}
+
+.title-category {
+	font-weight: 400;
+	color: white;
+	line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.title-category a {
+	font-family: "FSTrajanProRegular";
+	color: #fff;
+    font-size: 20px;
+}
+
+.text-category {
+	font-family: "Times New Roman";
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+/*body trang single*/
+
+.post-categories {
+	text-align: center;
+}
+
+.post-categories a {
+	font-family: "Times New Roman";
+	color: rgb(255 243 186);
+	font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(255 243 186);
+}
+
+.title-single {
+	font-family: "FSTrajanProRegular";
+	font-weight: 400;
+	font-size: 26px;
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.bg-single2 {
+	margin-top: 10px;
+    padding-left: 25px;
+}
+
+.content-single {
+	font-family: "Times New Roman";
+	color: white;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.content-single iframe {
+	width: 100%;
+}
+
+.content-single img {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content-single div[style] {
+	width: 100% !important;
+}
+
+.content-single h1,
+.content-single h2,
+.content-single h3,
+.content-single h4,
+.content-single h5,
+.content-single h6 {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+
+/*phần sidebar*/
+
+.bg-sidebar {
+	margin-bottom: 40px;
+}
+
+/*khung tim kiếm*/
+
+.searchform {
+	background-color: white;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #E5E9EA;
+}
+
+.search-field {
+	width: 100%;
+    background: unset;
+    border: none;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.close-search {
+	background: unset;
+	border: none;
+	color: #302825;
+	padding-right: 12px;
+}
+
+/*-------------------------*/
+
+.content-sidebar {
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+	padding-bottom: 12px;
+}
+
+.title-sidebar {
+	font-family: "FSTrajanProRegular";
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.img-sidebar img {
+	width: 100%;
+	height: auto;
+}
+
+.title-sidebar2 {
+	font-size: 15px;
+	line-height: 17px;
+	color: white;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.title-sidebar2 a {
+	font-family: "Times New Roman";
+	color: white;
+	font-size: 15px;
+}
+
+@media(max-width: 740px) {
+	.bg-single {
+		flex-direction: column-reverse;
+	}
+
+	.title-single {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.bg-single2 {
+		padding-left: 0;
+	}
+}
+
+
+/*body trang chi tiết sản phẩm*/
+
+.woocommerce-breadcrumb {
+	font-family: "Times New Roman";
+	color: #d9ba8f;
+}
+
+.woocommerce-breadcrumb a {
+	color: #d9ba8f;
+}
+
+.product_title,
+.sku_wrapper {
+	display: none;
+}
+
+.title-product-woo {
+	font-family: "FSTrajanProRegular";
+	color: white;
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+}
+
+.bg-product-woo {
+	padding-left: 30px;
+}
+
+.woocommerce-product-gallery__image {
+	background: #00000057;
+    padding: 20px;
+}
+
+.woocommerce-product-gallery__image img {
+	width: 100%;
+	height: auto;
+}
+
+.price-woo {
+	font-family: "FSTrajanProRegular";
+	color: white;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.variations .label {
+	display: none;
+}
+
+.variations .value > select {
+	font-family: "FSTrajanProRegular";
+	background: unset;
+	border: 1px solid white;
+	font-size: 15px;
+	color: white;
+	padding: 10px 132px 10px 12px;
+}
+
+#pa_khoi-luong option:nth-child(1) {
+	display: none;
+}
+
+#pa_khoi-luong option {
+	background: #b68f55;
+	color: white;
+}
+
+.reset_variations {
+    font-family: "Times New Roman";
+    color: red;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.content-product-woo {
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 20px;
+	color: white;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.quantity input {
+	font-family: "FSTrajanProRegular";
+	background: none;
+	border: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid #e4e4e4;
+    color: #fff;
+    width: 3.631em;
+    padding: 0.5em 0.6em;
+    text-align: center;
+}
+
+.woocommerce-variation-price {
+	margin: 20px 0;
+}
+
+.woocommerce-variation-price .price {
+	font-size: 22px;
+}
+
+.submit-product-woo {
+	margin-top: 20px;
+	font-family: "FSTrajanProRegular";
+	font-weight: normal;
+	color: white;
+	background: unset;
+    border: 1px solid #fff;
+    padding: 10px 72px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.submit-product-woo:hover {
+	border: 1px solid black;
+	color: black;
+}
+
+.posted_category {
+	font-family: "FSTrajanProRegular";
+	color: #2f2f2f;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-top: 25px;
+}
+
+.posted_category a {
+	color: #2f2f2f;
+}
+
+.posted_category a:hover {
+	text-decoration: underline;
+}
+
+
+/*sản phẩm tương tự*/
+
+.related-product {
+	margin: 70px 0;
+}
+
+.related-product__title {
+	text-align: left;
+}
+
+.content-product-related {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.content-product-related img {
+    background: #00000057;
+    padding: 10px;
+    width: 100%;
+    height: 280px;
+    object-fit: scale-down;
+    margin-bottom: 20px;
+}
+
+.content-product-related h2 {
+	font-family: "FSTrajanProRegular";
+	color: white;
+	font-weight: 400;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.price {
+	font-family: "FSTrajanProRegular";
+	color: white;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.buy-related {
+	margin-top: 20px;
+}
+
+.buy-related a {
+	background: unset;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "FSTrajanProRegular";
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    padding: 8px 40px;
+    transition: 0.3s;
+}
+
+.buy-related a:hover {
+	border: 1px solid black;
+	color: black;
+}
+
+@media(max-width: 1200px) {
+	.buy-related a {
+		padding: 8px 10px;
+	}
+
+	.content-product-related img {
+		height: 220px;
+	}
+}
+
+@media(max-width: 991px) {
+	.bg-product-woo {
+		padding-left: 0;
+		margin-top: 20px;
+	}
+
+	.content-product-related img {
+		height: 300px;
+	}
+
+	.buy-related a {
+		padding: 8px 40px;	
+	}
+}
+
+@media(max-width: 450px) {
+	.title-product-woo {
+		font-size: 22px;
+	}
+
+	.price-woo {
+		font-size: 25px;
+	}
+
+	.content-product-woo {
+		font-size: 18px;
+	}
+
+	.submit-product-woo {
+		padding: 10px 50px;
+	}
+
+	.variations .value > select {
+		padding: 10px 88px 10px 12px;
+	}
+}
+
+
+/*body trang giỏ hàng*/
+
+.bg-cart {
+	margin: 90px 0;
+	font-family: "Times New Roman";
+}
+
+.head-cart {
+	display: none;
+}
+
+.product-name a {
+	text-decoration: none;
+    color: #09314E; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-price span {
+	font-size: 18px;
+}
+
+.product-subtotal span {
+	font-size: 18px;
+}
+
+#coupon_code {
+	width: 200px;
+	height: 40px;
+    border: 1px solid #2294c93b;
+    padding-left: 10px;
+}
+
+.text-total {
+	margin-bottom: 30px;
+}
+
+.button-cart {
+	background-color: black;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.button-cart:hover {
+	color: white;
+}
+
+#btn_coupon,
+#btn_checkout {
+	background: #302825;
+	font-size: 15px;
+	color: #efcb88;
+	height: 40px;
+	transition: 0.3s;
+}
+
+#update-cart-product {
+	height: 40px;
+	padding-bottom: 13px;
+}
+
+#bg-totals {
+	width: 90%;
+}
+
+.text-total2 {
+	font-weight: 500;
+    font-size: 30px;
+    color: white;
+	margin-bottom: 20px;
+}
+
+#custom-checkout {
+	background: #302825;
+	color: #efcb88;
+	font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 12px;
+    transition: 0.3s;
+}
+
+#custom-checkout:hover,
+#btn_coupon:hover {
+	background: #b68f55;
+	color: white;
+}
+
+.cart-collaterals .cart_totals {
+	width: 100%;
+}
+
+@media(max-width: 991px) {
+	#bg-totals {
+		width: 100%;
+	}
+}
+
+@media(max-width: 768px) {
+	#coupon_code,
+	#btn_coupon {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.product-quantity p {
+		display: none;
+	}
+
+}
+
+
+/*body trang checkout*/
+
+.bg-checkout {
+	margin: 90px 0;
+	font-family: "Times New Roman";
+}
+
+.bg-checkout label {
+	margin-bottom: 4px;
+}
+
+.bg-checkout input {
+	height: 40px;
+	padding-left: 10px;
+}
+
+#order_comments {
+	height: 180px;
+	padding-left: 10px;
+}
+
+.text-checkout {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#place_order {
+	background: #302825;
+	color: #efcb88;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	transition: 0.3s;
+}
+
+#place_order:hover {
+	background: #b68f55;
+	color: white;
+}
+
+#checkbox-checkout {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width: 991px) {
+	.bg-checkout h3 {
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.bg-checkout {
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
+}
+
+
+/* body trang thankyou */
+
+.woocommerce-order {
+	padding-top: 5%;
+}
+
+.woocommerce-order h2 {
+	font-size: 30px;
+	font-weight: 500;
+	color: #656812;
+	margin-bottom: 20px;
+}
+
+.text8 {
+	font-weight: 400;
+	font-size: 18px;
+	color: #5ABF0B;
+	margin-bottom: 40px;
+}
+
+.woocommerce-customer-details {
+	line-height: 2;
+}
+
+.woocommerce-column__title {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+@media(max-width: 991px) {
+	.woocommerce ul.order_details li {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 450px) {
+	.woocommerce-order {
+		padding-top: 15%;
+	}
+}
+
+
+/*body trang chi tiết từng sản phẩm*/
+
+
+.title-archive-woo {
+	font-family: "FSTrajanProRegular";
+    font-style: unset;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.woocommerce-result-count {
+	display: none;
+}
+
+.orderby {
+    font-family: "FSTrajanProRegular";
+    background: unset;
+    border: 1px solid white;
+    font-size: 15px;
+    color: white;
+    width: 18%;
+    height: 35px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.orderby option {
+	background: #b68f55;
+    color: white;
+}
+
+@media(max-width: 1400px) {
+	.orderby {
+		width: 25%;
+	}
+}
+
+@media(max-width: 740px) {
+	.orderby {
+		width: 45%;
+	}
+}
+
+@media(max-width: 450px) {
+	.title-archive-woo {
+		font-size: 25px;
+	}
+
+	.orderby {
+		width: 55%;
+	}
+}
+
+/*body trang tìm kiếm*/
+
+.text-search {
+	font-family: "FSTrajanProRegular";
+    color: #fff;
+    font-size: 13px;
+}
+
+.text-search2 {
+	font-family: "FSTrajanProRegular";
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
