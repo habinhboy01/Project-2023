@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Kanit-Bold";
+  src: url("../fonts/Kanit-Bold.ttf");
+}
+
+@font-face {
+  font-family: "UTM Helve";
+  src: url("../fonts/UTM Helve.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: "UTM Helve";
+}
+
+ul,ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+h1 {
+	font-family: "Kanit-Bold";
+}
+
+h2,h3,h4,h5,h6,p {
+	font-family: "OpenSans";
+}
+
+.container-fluid {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+@media(max-width: 991px) {
+	.container-fluid {
+		padding-right: var(--bs-gutter-x,.75rem);
+    	padding-left: var(--bs-gutter-x,.75rem);
+	}
+}
