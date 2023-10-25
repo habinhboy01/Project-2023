@@ -1,168 +1,200 @@
 // menu pc
 
-// menu datatyk
+$(document).ready(function() {
+    $(window).scroll(function(event) {
+        var pos_body = $('html,body').scrollTop();
+        if (pos_body > 55) {
+            $('.bg-header3').addClass('sticky');
+        }
+        else {
+            $('.bg-header3').removeClass('sticky');
+        }
+    })
+})
 
-var acc = document.getElementsByClassName("open-datatyk");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("text-menu3");
+// company
+
+var rowMenu = document.querySelectorAll('ul.menu-pc2 > li.menu-item-561 > ul.sub-menu');
+
+rowMenu.forEach(function (element) {
+	element.classList.add('row-menu')
+})
+
+// --------------
+
+var subMenu = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1454 > a');
+
+subMenu.forEach(function (element) {
+	element.classList.add('bg-sub-menu2')
+})
+
+// services
+
+var rowMenu2 = document.querySelectorAll('ul.menu-pc2 > li.menu-item-563 > ul.sub-menu');
+
+rowMenu2.forEach(function (element) {
+	element.classList.add('row-menu')
+})
+
+// --------------
+
+// DATA ANALYTICS
+
+var subMenu2 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1462 > a');
+
+subMenu2.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// APPLICATIONS
+
+var subMenu3 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1469 > a');
+
+subMenu3.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// cloud
+
+var subMenu4 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1475 > a');
+
+subMenu4.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// TRAINING
+
+var subMenu5 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1479 > a');
+
+subMenu5.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// LICENSING
+
+var subMenu6 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1487 > a');
+
+subMenu6.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// MANAGE SERVICES
+
+var subMenu7 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1498 > a');
+
+subMenu7.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+// content services
+
+var contentServices = document.querySelectorAll('ul.row-menu > li.sub-services > ul.sub-menu');
+
+contentServices.forEach(function (element) {
+	element.classList.add('content-sub-menu3')
+})
+
+var contentServices = document.querySelectorAll('ul.row-menu > li.menu-item-1454 > ul.sub-menu');
+
+contentServices.forEach(function (element) {
+	element.classList.remove('content-sub-menu3')
+})
+
+// firth content
+
+var firthContent = document.querySelectorAll('ul.row-menu > li.menu-item-1462 > ul.sub-menu');
+
+firthContent.forEach(function (element) {
+	element.classList.add('content-sub-menu2')
+})
+
+
+let tabs = document.querySelectorAll(".sub-services");
+let tabContents = document.querySelectorAll(".content-sub-menu3");
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContents.forEach((content) => {
+      content.classList.remove("content-sub-menu2");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-sub-menu");
+    });
+    tabContents[index].classList.add("content-sub-menu2");
+    tabs[index].classList.add("active-sub-menu");
   });
-}
-
-var openCompany = document.getElementsByClassName("open-company")[0];
-var menuCompany = document.getElementById("company");
-
-var openSolution = document.getElementsByClassName("open-solution")[0];
-var menuSolution = document.getElementById("solution");
-
-var openServices = document.getElementsByClassName("open-services")[0];
-var menuServices = document.getElementById("services");
-
-var openStudies = document.getElementsByClassName("open-studies")[0];
-var menuStudies = document.getElementById("studies");
-
-var openResource = document.getElementsByClassName("open-resource")[0];
-var menuResource = document.getElementById("resource");
-
-
-openCompany.onclick = function() {
-    menuCompany.classList.toggle('bg-sub-menu4');
-
-    menuSolution.classList.remove('bg-sub-menu4');
-    openSolution.classList.remove('text-menu3');
-
-    menuServices.classList.remove('bg-sub-menu4');
-    openServices.classList.remove('text-menu3');
-
-    menuStudies.classList.remove('bg-sub-menu4');
-    openStudies.classList.remove('text-menu3');
-
-    menuResource.classList.remove('bg-sub-menu4');
-    openResource.classList.remove('text-menu3');
-}
-
-openSolution.onclick = function() {
-    menuSolution.classList.toggle('bg-sub-menu4');
-    menuCompany.classList.remove('bg-sub-menu4');
-    openCompany.classList.remove('text-menu3');
-
-    menuServices.classList.remove('bg-sub-menu4');
-    openServices.classList.remove('text-menu3');
-
-    menuStudies.classList.remove('bg-sub-menu4');
-    openStudies.classList.remove('text-menu3');
-
-    menuResource.classList.remove('bg-sub-menu4');
-    openResource.classList.remove('text-menu3');
-}
-
-openServices.onclick = function() {
-    menuServices.classList.toggle('bg-sub-menu4');
-
-    menuCompany.classList.remove('bg-sub-menu4');
-    openCompany.classList.remove('text-menu3');
-
-    menuSolution.classList.remove('bg-sub-menu4');
-    openSolution.classList.remove('text-menu3');
-
-    menuStudies.classList.remove('bg-sub-menu4');
-    openStudies.classList.remove('text-menu3');
-
-    menuResource.classList.remove('bg-sub-menu4');
-    openResource.classList.remove('text-menu3');
-}
-
-openStudies.onclick = function() {
-    menuStudies.classList.toggle('bg-sub-menu4');
-
-    menuCompany.classList.remove('bg-sub-menu4');
-    openCompany.classList.remove('text-menu3');
-
-    menuSolution.classList.remove('bg-sub-menu4');
-    openSolution.classList.remove('text-menu3');
-
-    menuServices.classList.remove('bg-sub-menu4');
-    openServices.classList.remove('text-menu3');
-
-    menuResource.classList.remove('bg-sub-menu4');
-    openResource.classList.remove('text-menu3');
-}
-
-openResource.onclick = function() {
-    menuResource.classList.toggle('bg-sub-menu4');
-
-    menuCompany.classList.remove('bg-sub-menu4');
-    openCompany.classList.remove('text-menu3');
-
-    menuSolution.classList.remove('bg-sub-menu4');
-    openSolution.classList.remove('text-menu3');
-
-    menuServices.classList.remove('bg-sub-menu4');
-    openServices.classList.remove('text-menu3');
-
-    menuStudies.classList.remove('bg-sub-menu4');
-    openStudies.classList.remove('text-menu3');
-}
-
-
-// ----------------
-
-var allSelect = document.querySelector.bind(document);
-var all = document.querySelectorAll.bind(document);
-
-
-var button = all('.tab-sub-menu');
-var button2 = all('.tab-sub-menu2');
-var button3 = all('.tab-sub-menu3');
-var contents = all('.content-sub-menu');
-var contents2 = all('.content-sub-menu3');
-var contents3 = all('.content-sub-menu4');
-
-button.forEach((tab, index) => {
-    var content = contents[index];
-
-    tab.onclick = function () {
-
-        allSelect('.tab-sub-menu.active-sub-menu').classList.remove('active-sub-menu');
-        allSelect('.content-sub-menu.content-sub-menu2').classList.remove('content-sub-menu2');
-
-        this.classList.add('active-sub-menu');
-        content.classList.add('content-sub-menu2');
-
-    }
 });
 
-button2.forEach((tab, index) => {
-    var content = contents2[index];
 
-    tab.onclick = function () {
+// our case studies
 
-        allSelect('.tab-sub-menu2.active-sub-menu').classList.remove('active-sub-menu');
-        allSelect('.content-sub-menu3.content-sub-menu2').classList.remove('content-sub-menu2');
+var rowMenu3 = document.querySelectorAll('ul.menu-pc2 > li.menu-item-564 > ul.sub-menu');
 
-        this.classList.add('active-sub-menu');
-        content.classList.add('content-sub-menu2');
+rowMenu3.forEach(function (element) {
+	element.classList.add('row-menu3')
+})
 
-    }
+var subMenu8 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1505 > a');
+
+subMenu8.forEach(function (element) {
+	element.classList.add('bg-sub-menu3');
+	
+})
+
+
+var subMenu9 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1519 > a');
+
+subMenu9.forEach(function (element) {
+	element.classList.add('bg-sub-menu3')
+})
+
+var contentStudies = document.querySelectorAll('ul.row-menu3 > li.menu-item-1505 > ul.sub-menu');
+
+contentStudies.forEach(function (element) {
+	element.classList.add('content-sub-menu4');
+	element.classList.add('content-sub-menu5');
+})
+
+var contentStudies2 = document.querySelectorAll('ul.row-menu3 > li.menu-item-1519 > ul.sub-menu');
+
+contentStudies2.forEach(function (element) {
+	element.classList.add('content-sub-menu4')
+})
+
+
+let tabs2 = document.querySelectorAll(".sub-services3");
+let tabContents2 = document.querySelectorAll(".content-sub-menu4");
+
+tabs2.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContents2.forEach((content) => {
+      content.classList.remove("content-sub-menu5");
+    });
+    tabs2.forEach((tab) => {
+      tab.classList.remove("active-sub-menu");
+    });
+    tabContents2[index].classList.add("content-sub-menu5");
+    tabs2[index].classList.add("active-sub-menu");
+  });
 });
 
-button3.forEach((tab, index) => {
-    var content = contents3[index];
 
-    tab.onclick = function () {
+// INSIGHTS
 
-        allSelect('.tab-sub-menu3.active-sub-menu').classList.remove('active-sub-menu');
-        allSelect('.content-sub-menu4.content-sub-menu2').classList.remove('content-sub-menu2');
+var rowMenu4 = document.querySelectorAll('ul.menu-pc2 > li.menu-item-565 > ul.sub-menu');
 
-        this.classList.add('active-sub-menu');
-        content.classList.add('content-sub-menu2');
+rowMenu4.forEach(function (element) {
+	element.classList.add('row-menu')
+})
 
-    }
-}); 
+// --------------
 
+var subMenu10 = document.querySelectorAll('ul.menu-pc2 > li > ul.sub-menu > li.menu-item-1526 > a');
 
+subMenu10.forEach(function (element) {
+	element.classList.add('bg-sub-menu2')
+})
 
 
 // menu mobile
@@ -182,27 +214,28 @@ closeMenu.onclick = function() {
 // menu đa cấp mobile
 
 var companyMobile = document.getElementsByClassName('display-sub')[0];
-var solutionMobile = document.getElementsByClassName('display-sub2')[0];
+
 var servicesMobile = document.getElementsByClassName('display-sub3')[0];
 var ourCaseStudiesMobile = document.getElementsByClassName('display-sub4')[0];
 var resourceMobile = document.getElementsByClassName('display-sub5')[0];
 
 
 var openCompanyMobile = document.getElementsByClassName('open-company-mobile')[0];
-var openSolutionMobile = document.getElementsByClassName('open-solution-mobile')[0];
+
 var openServicesMobile = document.getElementsByClassName('open-services-mobile')[0];
 var openOurCaseStudiesMobile = document.getElementsByClassName('open-our-case-studies-mobile')[0];
 var openResourceMobile = document.getElementsByClassName('open-resource-mobile')[0];
 
 
 var closeCompanyMobile = document.getElementsByClassName('sub-company')[0];
-var closeSolutionMobile = document.getElementsByClassName('sub-solution')[0];
-var closeServicesMobile = document.getElementsByClassName('sub-services')[0];
+
+var closeServicesMobile = document.getElementsByClassName('sub-services-mobile')[0];
 var closeOurCaseStudiesMobile = document.getElementsByClassName('sub-our-case-studies')[0];
 var closeResourceMobile = document.getElementsByClassName('sub-resource')[0];
 
 // ---------------
 // company
+
 openCompanyMobile.onclick = function() {
     companyMobile.classList.add('sticky-menu');
 }
@@ -211,16 +244,7 @@ closeCompanyMobile.onclick = function() {
     companyMobile.classList.remove('sticky-menu');
 }
 
-// -----------------------
-// solution
 
-openSolutionMobile.onclick = function() {
-    solutionMobile.classList.add('sticky-menu');
-}
-
-closeSolutionMobile.onclick = function() {
-    solutionMobile.classList.remove('sticky-menu');
-}
 
 // -----------------------
 // services
@@ -276,3 +300,12 @@ $('.open-solution-mobile3').on('click', function() {
 $('.open-solution-mobile4').on('click', function() {
     $('.border-content-mobile4').slideToggle();
 })
+
+$('.open-solution-mobile5').on('click', function() {
+    $('.border-content-mobile5').slideToggle();
+})
+
+$('.open-solution-mobile6').on('click', function() {
+    $('.border-content-mobile6').slideToggle();
+})
+

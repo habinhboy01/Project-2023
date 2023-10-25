@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-	<div class="container-fluid bg-technology bg-footer3">
+    <div id="main">
+	    <div class="container-fluid bg-technology bg-footer3">
 		<p class="text-search">Kết quả tìm kiếm:</p>
 
 		<h1 class="text-search2"><?php the_search_query(); ?></h1>
@@ -31,11 +31,6 @@
 										<?php echo get_the_date(); ?>
 									</li>
 
-									<li>
-										<img src="<?php bloginfo('template_directory') ?>/images/chat.png">
-										
-										Comment (5)
-									</li>
 								</ul>
 							</div>	                    
 		            	</div>
@@ -49,6 +44,7 @@
 			endif; ?>
 		</div>
 	</div>
+    </div>
 
 
 <?php get_footer(); ?>

@@ -1,4 +1,3 @@
-
 // ứng tuyển
 
 $('.recruitment').on('click',function(){
@@ -13,6 +12,8 @@ $('.recruitment').on('click',function(){
 
 
 // slider technology
+var allSelect = document.querySelector.bind(document);
+var all = document.querySelectorAll.bind(document);
 
 var logoTechnology = all('.logo-technology');
 var contentTechnology = all('.mySlides');
@@ -46,8 +47,8 @@ $('.carousel_1').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText:["<div class='btn-prev'><img src='http://localhost/datatyk/wp-content/themes/data_themes/images/prev.png'></div>",
-    "<div class='btn-next'><img src='http://localhost/datatyk/wp-content/themes/data_themes/images/next.png'></div>"],
+    navText:["<div class='btn-prev'><img src='https://website.datatyk.com/wp-content/themes/data_themes/images/prev.png'></div>",
+    "<div class='btn-next'><img src='https://website.datatyk.com/wp-content/themes/data_themes/images/next.png'></div>"],
 
     autoplay:true,
     // autoplayTimeout:8000,
@@ -70,8 +71,8 @@ $('.carousel_2').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText:["<div class='btn-prev'><img src='http://localhost/datatyk/wp-content/themes/data_themes/images/prev.png'></div>",
-    "<div class='btn-next'><img src='http://localhost/datatyk/wp-content/themes/data_themes/images/next.png'></div>"],
+    navText:["<div class='btn-prev'><img src='https://website.datatyk.com/wp-content/themes/data_themes/images/prev.png'></div>",
+    "<div class='btn-next'><img src='https://website.datatyk.com/wp-content/themes/data_themes/images/next.png'></div>"],
 
     autoplay:true,
     // autoplayTimeout:8000,
@@ -88,7 +89,6 @@ $('.carousel_2').owlCarousel({
         }
     }
 })
-
 
 // Food & Beverage
 

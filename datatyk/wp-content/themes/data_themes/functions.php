@@ -24,15 +24,24 @@ function m_register_menu()
 {
 	register_nav_menus(
 		array(
-			'menu-1' => __('Primary'),
-			'menu-2' => __('Primary2'),
-			'menu-3' => __('Primary3'),
-			'menu-4' => __('Primary4'),
-			'menu-5' => __('Primary5'),
+			'menu-1' => __('Menu Contact'),
+			'menu-2' => __('Menu PC'),
+			'menu-3' => __('Menu Category'),
+			'menu-4' => __('Menu Tags'),
+			'menu-5' => __('Menu mobile'),
 		)
 	);
 }
 add_action('init', 'm_register_menu');
+
+function prefix_nav_description( $item_output, $item, $depth, $args ) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( $args->link_after . '</a>', '<span class="text-technology2">' . $item->description . '</span>' . $args->link_after . '</a>', $item_output );
+    }
+ 
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 4 );
 
 
 // add theme option menu bar admin 
@@ -81,12 +90,12 @@ add_shortcode( 'csw_search_form', 'csw_search_form_fc' );
 function csw_search_form_fc(){
     ?>
     <form method="get" class="form-career" action="<?php echo get_home_url() ?>">
-    <input type="search" class="input-career" placeholder="Từ khoá" value="" name="s">
+    <input type="search" class="input-career" placeholder="Search" value="" name="s">
 
     <!-- nghề nghiệp -->
 
 	<select class="input-career2" name="career">
-		<option value="">Ngành nghề</option>
+		<option value="">Career</option>
 
 		<?php
 		   $args = array(			   		
@@ -111,7 +120,7 @@ function csw_search_form_fc(){
 	<!-- nơi làm việc -->
 
 	<select class="input-career2" name="location">
-		<option value="">Nơi làm việc</option>
+		<option value="">Areas</option>
 
 		<?php
 		   $args = array(			   		
