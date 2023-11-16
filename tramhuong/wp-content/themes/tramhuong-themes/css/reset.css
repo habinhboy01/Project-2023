@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/static/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: "arial"
+}
+
+ul,ol {
+	font-family: "Roboto";
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+p {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Roboto-Bold";
+	margin: 0;
+	padding: 0;
+}
+
+.mr-top {
+	margin-top: 70px;
+}
+
+@media(max-width: 450px) {
+	.mr-top {
+		margin-top: 30px;
+	}
+
+	.mr-top2 {
+		margin-top: 70px;
+	}
+}
+
+/*set up animation*/
+
+@keyframes Inout {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/*-----------*/
+
+

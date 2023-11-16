@@ -1,0 +1,46 @@
+2023-08-07T09:47:01+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 132
+
+2023-08-07T09:47:44+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 132
+
+2023-08-07T09:48:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php:130
+Stack trace:
+#0 C:\xampp\htdocs\tramhuong\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tramhuong\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tramhuong\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 130
+
+2023-08-07T10:15:24+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php:130
+Stack trace:
+#0 C:\xampp\htdocs\tramhuong\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tramhuong\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tramhuong\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 130
+
+2023-08-07T10:16:05+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 132
+
+2023-08-07T10:16:06+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 132
+
+2023-08-07T10:19:53+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php:131
+Stack trace:
+#0 C:\xampp\htdocs\tramhuong\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tramhuong\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tramhuong\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 131
+
+2023-08-07T10:21:34+00:00 CRITICAL syntax error, unexpected ';', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 131
+
+2023-08-07T10:21:44+00:00 CRITICAL syntax error, unexpected ';', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 131
+
+2023-08-07T10:25:03+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 162
+
+2023-08-07T10:27:29+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 162
+
+2023-08-07T10:28:19+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 162
+
+2023-08-07T10:55:31+00:00 CRITICAL syntax error, unexpected ''.get_term_link($category).'' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 130
+
+2023-08-07T10:55:31+00:00 CRITICAL syntax error, unexpected ''.get_term_link($category).'' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in C:\xampp\htdocs\tramhuong\wp-content\themes\tramhuong-themes\index.php on line 130
+

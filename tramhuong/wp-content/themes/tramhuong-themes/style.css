@@ -1,0 +1,324 @@
+.carousel_1 {
+	position: relative;
+}
+
+.item-banner {
+	height: 400px;
+	object-fit: cover;
+}
+
+.carousel_1 > .owl-nav {
+	display: none;
+}
+
+.carousel_1 > .owl-dots {
+	position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 15px;
+	height: 15px;
+	background: #869791;
+	border: 4px solid #acacac;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: white;
+	border: 4px solid #3785d4;
+}
+
+@media(max-width: 991px) {
+	.item-banner {
+		height: 300px;
+	}
+}
+
+/*menu pc*/
+
+.header-pc {
+	background-color: #242323;
+	padding: 10px 0;
+}
+
+.sticky-menu {
+	background-color: rgba(16, 25, 40, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 7;
+}
+
+.img_logo {
+	width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+}
+
+.bg-menu-pc,
+.menu-pc,
+.menu-icon {
+	display: flex;
+	align-items: center;
+}
+
+.bg-menu-pc {
+	justify-content: space-between;
+}
+
+.menu-pc,
+.menu-icon {
+	list-style: none;
+}
+
+.menu-pc li {
+	padding: 0 20px;
+}
+
+.menu-pc a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: 0.4s all linear;
+}
+
+.menu-pc a:hover {
+	color: #3785d4;
+}
+
+.current_page_item a {
+	color: #3785d4;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 17px;
+}
+
+.menu-icon li {
+	cursor: pointer;
+    padding: 0 5px;
+}
+
+.display-mobile {
+	display: none;
+}
+
+/*giỏ hàng*/
+
+.cart-home {
+	color: white;
+}
+
+.cart-home:hover {
+	color: white;
+}
+
+.quantity-home {
+	font-size: 12px;
+}
+
+/*sub menu*/
+
+.menu-item-236::after {
+	content: "\f078";
+	font-weight: 700;
+	font-family: 'Font Awesome\ 5 pro';
+	font-size: 12px;
+	padding-left: 5px;
+	color: white;
+}
+
+.menu-item-236:hover::after {
+	color: #3785d4;
+}
+
+#sub-product {
+	display: none;
+    background-color: #242323;
+    list-style: none;
+    position: absolute;
+    padding: 20px;
+    z-index: 3;
+}
+
+#sub-product li {
+	padding: 5px 0;
+}
+
+.menu-item-236:hover #sub-product {
+	display: block;
+}
+
+@media(max-width: 991px) {
+	.display-pc {
+		display: none;
+	}
+
+	.display-mobile {
+		display: block;
+	}
+
+	.menu-icon {
+		font-size: 20px;
+	}
+
+	.menu-icon li {
+		padding: 0 10px;
+	}
+
+	.bg-menu-mobile {
+		background: rgba(0,0,0,0.4);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5;
+		transform: translateX(-100%);
+		transition: 0.3s;
+	}
+
+	.active-mobile {
+		transform: translateX(0);
+	}
+
+	.menu-mobile {
+	    background-color: white;
+	    width: 75%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    list-style: none;
+	    padding: 25px;
+	    overflow: auto;
+	}
+
+	.menu-mobile li {
+		padding: 10px 0;
+	}
+
+	.menu-mobile a {
+	    font-size: 15px;
+	    font-weight: bold;
+	    color: #a3a3a3;
+	    text-transform: uppercase;
+	}
+
+	#sub-product-mobile {
+		display: none;
+	    background-color: #242323;
+	    list-style: none;
+	    padding: 10px 20px;
+	    margin-top: 15px;
+	}
+
+	.menu-item-236 {
+		position: relative;
+	}
+
+	.arrow-dropdown {
+		color: #a3a3a3;
+		position: absolute;
+		top: 10px;
+		right: 0;
+	}
+
+	.menu-item-236::after {
+		display: none;
+	}
+}
+
+@media(max-width: 450px) {
+	.img_logo {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+
+/*footer*/
+
+.bg-footer {
+	background-color: #242323;
+	padding: 50px 0;
+}
+
+.title-footer {
+	font-family: "Oswald";
+	color: #3785d4;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-footer {
+	color: #7b7b7b;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/*menu footer*/
+
+.menu-footer a {
+	font-size: 14px;
+	color: #7b7b7b;
+	transition: 0.3s;
+}
+
+.menu-footer a:hover {
+	color: #c1d82f;
+}
+
+.contact-footer {
+	font-size: 14px;
+	color: #7b7b7b;
+	list-style: none;
+	line-height: 24px;
+}
+
+.contact-footer li {
+	margin-bottom: 12px;
+}
+
+.contact-footer i {
+    margin-right: 5px;
+}
+
+.facebook-footer iframe {
+	width: 100% !important;
+}
+
+.back-top {
+	background-color: #9d4d4a;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	z-index: 5;
+	font-size: 15px;
+	color: white;
+	padding: 8px 18px;
+	transition: 0.3s;
+}
+
+.back-top:hover {
+	color: #fff;
+    background-color: #7f7f7f;
+}
+
+@media(max-width: 991px) {
+	.title-footer {
+		margin-top: 20px;
+	}
+}
+
+@media(max-width: 450px) {
+	.back-top {
+		display: none;
+	}
+}

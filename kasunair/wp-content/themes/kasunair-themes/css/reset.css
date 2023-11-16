@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("../fonts/static/Lexend-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lexend-Bold";
+  src: url("../fonts/static/Lexend-Bold.ttf");
+}
+
+
+body {
+	background-color: #EDF5FD;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Lexend";
+}
+
+ul,ol {
+	font-family: "Lexend";
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+p {
+	font-family: "Lexend";
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Lexend-Bold";
+	margin: 0;
+	padding: 0;
+}
+
+.mr-top {
+	margin-top: 50px;
+}
+
+.mr-top-2 {
+	margin: 60px 0;
+}
+
+
+/*set up animation*/
+
+@keyframes Inout {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/*-----------*/
+
+
