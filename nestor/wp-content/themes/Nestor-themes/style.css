@@ -1,0 +1,321 @@
+.header-contact {
+	background-color: #2D2D2D;
+	padding: 8px 0;
+}
+
+.list-contact-header {
+	list-style: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.list-contact-header li {
+	margin-right: 30px;
+}
+
+.list-contact-header i {
+	margin-right: 5px;
+}
+
+/*menu pc*/
+
+.bg-header {
+	padding: 25px 0;
+}
+
+.header-pc,
+.menu-pc {
+	display: flex;
+	align-items: center;
+}
+
+.header-pc {
+	justify-content: space-between;
+}
+
+.img_logo {
+    height: 30px;
+    object-fit: scale-down;
+}
+
+.menu-pc {
+	list-style: none;
+}
+
+.menu-pc li {
+	padding: 0 20px;
+}
+
+.menu-pc a {
+	color: #2D2D2D;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.current-menu-item a {
+	padding-bottom: 8px;
+	border-bottom: 3px solid #A8CE1D;
+}
+
+/*menu trang chủ*/
+
+.menu-home .header-pc {
+	position: relative;
+    z-index: 2;
+}
+
+.menu-home a {
+	color: white;
+	font-weight: 500;
+}
+
+.sticky-menu {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.sticky-logo,
+.sticky-logo-2 {
+	display: none;
+}
+
+.sticky-logo-3 {
+	display: block;
+}
+
+/*-------------*/
+
+.display-mobile {
+	display: none;
+}
+
+@media(max-width: 991px) {
+	.display-pc {
+		display: none;
+	}
+
+	.display-mobile {
+		display: block;
+	}
+
+	.header-mobile {
+		display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+
+	.icon-bar {
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+	.img_logo {
+		height: 40px;
+	}
+
+	.modal-menu {
+		background-color: rgb(0,0,0,0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		transform: translateX(-100%);
+		transition: 0.5s;
+	}
+
+	.action-menu {
+		transform: translateY(0);
+	}
+
+	.menu-mobile {
+		background-color: white;
+		width: 70%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		overflow: auto;
+		padding: 50px;
+    	list-style: none;
+	}
+
+	.menu-mobile li {
+		margin-bottom: 25px;
+	}
+
+	.menu-mobile a {
+		color: #2D2D2D;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	/*menu home mobile*/
+
+	.menu-home {
+		padding-top: 0;
+	}
+
+	.menu-home .header-mobile {
+		position: relative;
+	    z-index: 2;
+	    top: 25px;
+	}
+
+	.menu-home .icon-bar {
+		color: white;
+	}
+
+	/*-----------------*/
+}
+
+@media(max-width: 450px) {
+	.icon-bar {
+		font-size: 22px;
+	}
+
+	.img_logo {
+		height: 28px;
+	}
+
+	.menu-mobile {
+		width: 75%;
+		padding: 40px 25px;
+	}
+
+	.menu-mobile li {
+		margin-bottom: 20px;
+	}
+
+	.menu-mobile a {
+		font-size: 15px;
+	}
+}
+
+
+/*footer*/
+
+.bg-footer {
+    background-color: #2D2D2D;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.intro-footer {
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 30px;
+	padding-right: 10%;
+}
+
+.intro-footer h1,
+.intro-footer h2,
+.intro-footer h3,
+.intro-footer h4,
+.intro-footer h5,
+.intro-footer h6 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.list-contact-footer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    color: #579E01;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.list-contact-footer i {
+	color: white;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.list-contact-footer li {
+	margin-right: 40px;
+}
+
+.menu-footer {
+	list-style: none;
+}
+
+.menu-footer li {
+	margin-bottom: 10px;
+}
+
+.menu-footer a,
+.text-footer {
+	font-size: 15px;
+	color: white;
+	font-weight: 400;
+}
+
+.list-menu-footer {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-menu-footer li:nth-child(1) {
+	margin-right: 20px;
+}
+
+.list-menu-footer a {
+	color: white;
+	font-size: 35px;
+}
+
+.copyright {
+	border-top: 1px solid #5F5F5F;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.back-top {
+	position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 25px;
+    color: #A8CE1D;
+    z-index: 10;
+}
+
+.back-top:hover {
+	color: #A8CE1D;
+}
+
+@media(max-width: 991px) {
+	.list-contact-footer {
+		margin-bottom: 40px;
+	}
+
+	.list-contact-footer li {
+		margin-right: 20px;
+	}
+}
+
+@media(max-width: 740px) {
+	.intro-footer {
+		padding-right: 0;
+	}
+
+	.menu-footer {
+		margin-bottom: 40px;
+	}
+}

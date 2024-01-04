@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Encode";
+  src: url("../fonts/Encode/static/EncodeSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Encode-Bold";
+  src: url("../fonts/Encode/static/EncodeSans-Bold.ttf");
+}
+
+
+body {
+	font-family: "Encode";
+	margin: 0;
+	padding: 0;
+	color: #2D2D2D;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Encode";
+}
+
+ul,ol {
+	font-family: "Encode";
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}*/
+
+p {
+	font-family: "Encode";
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Encode-Bold";
+	margin: 0;
+	padding: 0;
+}
+
+.mr-top {
+	margin-top: 70px;
+}
+
+.mr-top-2 {
+	margin: 15px 0;
+}
+
+.mr-top-3 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #E9E9E9;
+	padding-bottom: 20px;
+}
+
+.mr-bottom {
+	margin-bottom: 70px;
+}
+
+.mr-bottom-2 {
+	margin-bottom: 40px;
+}
+
+@media(max-width: 991px) {
+	.mr-top-3 {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+}
+
+@media(max-width: 450px) {
+	.mr-top {
+		margin-top: 50px;
+	}
+}
+
+/*set up animation*/
+
+@keyframes Inout {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/*-----------*/
+
+
